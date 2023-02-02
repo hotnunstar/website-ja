@@ -10,3 +10,14 @@ body{
 nav{
     font-weight: bolder;
 }
+
+footer{
+    font-weight: bolder;
+}
+
+#cta{
+    font-weight: bolder;
+    background-image: url('../assets/BackgroundLines.png');
+    background-repeat: no-repeat;
+    background-position: -20% top;
+}

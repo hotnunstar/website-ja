@@ -14,6 +14,7 @@ module.exports = {
         lightPink: '#feede8',
         darkBrown: '#873e3e',
         lightBrown: '#6a4c3c',
+        veryLightBrown: '#d6c0ad',
         backgroundLines: '#f7e0d4',
       }
     },
