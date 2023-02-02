@@ -7,8 +7,9 @@ oQueFazemos.addEventListener('click', () => {
 })
 
 window.addEventListener('click', function(e){   
-    if (!subMenu.contains(e.target) && !oQueFazemos.contains(e.target)){
-        subMenu.classList.toggle('hidden')
-        subMenu.classList.toggle('flex')
+    if (!subMenu.contains(e.target) && !oQueFazemos.contains(e.target))
+    {
+        subMenu.classList.remove('flex')
+        subMenu.classList.add('hidden')
     }
   });
