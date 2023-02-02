@@ -4,7 +4,8 @@
   "description": "Website developed for **JA - Saúde & Bem-estar** company.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tailwindcss -i ./src/css/main.css -o ./src/css/style.css",
+    "watch": "tailwindcss -i ./src/css/main.css -o ./src/css/style.css --watch"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/hotnunstar/website-ja/issues"
   },
-  "homepage": "https://github.com/hotnunstar/website-ja#readme"
+  "homepage": "https://github.com/hotnunstar/website-ja#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
 }
