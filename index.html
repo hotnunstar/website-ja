@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-pt">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JA - Saúde & Bem-estar</title>
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
-    <h1 class="text-3xl font-bold underline">Hello World</h1>
+    <!--#region NAVBAR -->
+    <nav class="relative container min-w-full">
+        <!-- Flex Container -->
+        <flex class="flex items-center justify-between bg-darkPink px-3">
+            <!-- Logo -->
+            <div> 
+                <a href="#"> <img class="object-scale-down w-20 m-3 border-solid border-white border-4 rounded-full" src="./src/assets/Logo.svg" alt="JA - Saúde e Bem-estar logótipo"></a>
+            </div>
+
+            <!-- Menu Items -->
+            <div class="space-x-6">
+                <a href="#" class="hover:text-darkBrown">Quem somos?</a>
+                <a href="#" class="hover:text-darkBrown">O que fazemos?</a>
+                <a href="#" class="hover:text-darkBrown">Contactos</a>
+
+            <!-- Button -->
+            <a href="#" class="py-2 px-3 rounded-full baseline bg-lightPink text-darkBrown hover:text-lightPink hover:bg-darkBrown">
+                Faça o seu agendamento
+            </a>
+            </div>
+        </flex>
+    </nav>
+    <!--#endregion-->
 </body>
 </html>
