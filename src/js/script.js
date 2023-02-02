@@ -6,7 +6,9 @@ oQueFazemos.addEventListener('click', () => {
     subMenu.classList.toggle('hidden')
 })
 
-subMenu.addEventListener('mouseout', () => {
-    subMenu.classList.toggle('flex')
-    subMenu.classList.toggle('hidden')
-})
+window.addEventListener('click', function(e){   
+    if (!subMenu.contains(e.target) && !oQueFazemos.contains(e.target)){
+        subMenu.classList.toggle('hidden')
+        subMenu.classList.toggle('flex')
+    }
+  });
