@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/html/*.html"],
+  content: ["./index.html", "./src/html/*.html", './node_modules/tw-elements/dist/js/**/*.js'],
   theme: {
     screens:{
       sm: '480px',
@@ -19,5 +19,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tw-elements/dist/plugin')
+  ],
 }
