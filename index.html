@@ -3,7 +3,7 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,14 +14,17 @@
     <!--#region NAVBAR -->
     <nav class="relative container min-w-full">
         <!-- Flex Container -->
-        <div class="flex items-center justify-between bg-darkPink px-3">
+        <div class="flex pl-5 items-center justify-between bg-darkPink">
             <!-- Logo -->
-            <div> 
-                <a href="#"> <img class="object-scale-down w-20 m-3 border-solid border-white border-4 rounded-full" src="./src/assets/Logo.svg" alt="JA - Saúde e Bem-estar logótipo"></a>
-            </div>
+            <a href="./index.html">
+                <div id="logo" class="flex flex-row items-center"> 
+                    <img class="object-scale-down w-20 m-3 border-solid border-white border-4 rounded-full" src="./src/assets/Logo.svg" alt="JA - Saúde e Bem-estar logótipo">
+                    <h2 class="text-darkBrown hidden lg:flex">JA - SAÚDE & BEM-ESTAR</h2>
+                </div>
+            </a>
 
             <!-- Menu Items -->
-            <div class="space-x-6 flex items-center justify-between">
+            <div class="hidden pr-5 space-x-6 items-center justify-between md:flex">
                 <a href="#" class="hover:text-darkBrown">Quem somos?</a>
                 <div id="oQueFazemos">
                     <a href="#" class="hover:text-darkBrown">O que fazemos?</a>
@@ -40,6 +43,27 @@
                 Faça o seu agendamento
             </a>
             </div>
+
+            <!-- Hamburger Icon -->
+            <button id="menu-btn" class="mr-5 block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex-col items-center text-center hidden mt-4 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="#" class="py-2">Quem somos?</a>
+                <a href="#" class="py-2 w-5/6 border-t-4 border-double border-darkBrown">Drenagem Linfática Manual</a>
+                <a href="#" class="py-2">Mesoterapia Homeopática Estética</a>
+                <a href="#" class="py-2">Mesoterapia Homeopática Dor</a>
+                <a href="#" class="py-2">Microagulhamento</a>
+                <a href="#" class="py-2 w-5/6 text-center border-b-4 border-double border-darkBrown">Tratamentos Enfermagem</a>
+                <a href="#" class="py-2">Contactos</a>
+                <a href="#" class="py-2">Faça o seu agendamento</a>
+            </div>
         </div>
     </nav>
     <!--#endregion-->
@@ -47,26 +71,26 @@
     <!--#region Title-->
     <section id="title">
         <!-- Flex Container -->
-        <div class="container flex flex-row justify-between items-center gap-5 py-12 mx-auto">
-            <div class="flex flex-col items-center gap-5">
+        <div class="container flex flex-col justify-between items-center gap-10 py-8 mx-auto lg:flex-row">
+            <div class="flex flex-col items-left gap-7 md:items-center">
                 <!-- Heading -->
-                <h1 class="text-5xl leading-tight text-center text-darkBrown">Cuide do seu bem estar no conforto do seu lar</h1>
+                <h1 class="px-3 text-5xl leading-tight text-left text-darkBrown md:text-center">Cuide do seu bem estar no conforto do seu lar</h1>
                 <!-- Services -->
-                <div class="flex flex-row items-center">
-                    <p class="text-lg px-3 border-r-2 border-solid border-black">Drenagem</p></a>
-                    <p class="text-lg px-3 border-r-2 border-solid border-black">Mesoterapia</p></a>
-                    <p class="text-lg px-3 border-r-2 border-solid border-black">Microagulhamento</p></a>
-                    <p class="text-lg px-3">Tratamentos de Enfermagem</p></a>
+                <div class="text-lg flex flex-col items-left md:flex-row md:items-center">
+                    <p class="px-3 md:border-r-2 md:border-solid md:border-black ">Drenagem</p></a>
+                    <p class="px-3 md:border-r-2 md:border-solid md:border-black">Mesoterapia</p></a>
+                    <p class="px-3 md:border-r-2 md:border-solid md:border-black">Microagulhamento</p></a>
+                    <p class="px-3">Tratamentos de Enfermagem</p></a>
                 </div>
             </div>
             
             <!-- Buttons -->
-            <div class="flex flex-col text-center gap-5">
+            <div class="flex flex-row text-center gap-5 lg:flex-col">
                 <a href="#" class="py-2 px-3 rounded-full baseline ring-2 ring-solid ring-darkBrown bg-lightPink text-darkBrown transition duration-300 hover:text-lightPink hover:bg-darkBrown">
                     Sobre nós
                 </a>
                 <a href="#" class="py-2 px-3 rounded-full baseline ring-2 ring-solid ring-darkBrown bg-lightPink text-darkBrown transition duration-300 hover:text-lightPink hover:bg-darkBrown">
-                    Faça o seu agendamento
+                    Agendamento
                 </a>
             </div>
         </div>
@@ -97,38 +121,86 @@
             data-bs-slide-to="2"
             aria-label="Slide 3"
           ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
         </div>
         <div class="carousel-inner relative w-full overflow-hidden">
-          <div class="carousel-item active relative float-left w-full">
-            <div class="relative overflow-hidden bg-no-repeat bg-cover" style="background-position: 50%;">
-              <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(123).jpg" class="block w-full" />
-              <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black opacity-50"></div>
+            <!-- Image 1 -->
+            <div class="carousel-item active relative float-left w-full">
+                <div class="relative overflow-hidden bg-no-repeat bg-cover" style="background-position: 50%;">
+                    <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(123).jpg" class="block w-full" />
+                <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black opacity-50"></div>
             </div>
-            <div class="carousel-caption hidden md:block absolute text-center">
-              <h5 class="text-xl">First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+            <div class="carousel-caption absolute text-center">
+                <h5 class="text-xl hidden md:block">Celulite?</h5>
+                <p class="hidden md:block">Com a mesoterapia é possível obter uma pele mais lisa e tonificada, com a diminuição dos volumes de gordura. Diga adeus à pele casca de laranja!</p>
+                <p class="md:hidden">Diga adeus à pele casca de laranja com a mesoterapia! Pele mais lisa e tonificada.</p>
             </div>
-          </div>
-          <div class="carousel-item relative float-left w-full">
+            </div>
+
+            <!-- Image 2 -->
+            <div class="carousel-item relative float-left w-full">
             <div class="relative overflow-hidden bg-no-repeat bg-cover" style="background-position: 50%;">
               <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(124).jpg" class="block w-full" />
               <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black opacity-50"></div>
             </div>
-            <div class="carousel-caption hidden md:block absolute text-center">
-              <h5 class="text-xl">Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+            <div class="carousel-caption absolute text-center">
+              <h5 class="text-xl hidden md:block">Dor?</h5>
+              <p class="hidden md:block">Sim, é possível eliminar dores crónicas e agudas. Diga adeus à dor com o auxilio da mesoterapia. </p>
+              <p class="md:hidden">Dores crónicas e agudas? Use mesoterapia como sua aliada!</p>
             </div>
-          </div>
-          <div class="carousel-item relative float-left w-full">
+            </div>
+        
+            <!-- Image 3 -->
+            <div class="carousel-item relative float-left w-full">
             <div class="relative overflow-hidden bg-no-repeat bg-cover" style="background-position: 50%;">
               <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(125).jpg" class="block w-full" />
               <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black opacity-50"></div>
             </div>
-            <div class="carousel-caption hidden md:block absolute text-center">
-              <h5 class="text-xl">Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+            <div class="carousel-caption absolute text-center">
+              <h5 class="text-xl hidden md:block">Rugas?</h5>
+              <p class="hidden md:block">Com a perda do colágeno e elastina as rugas começam a aparecer. Com o microagulhamento diga adeus às rugas que lhe incomodam!</p>
+              <p class="md:hidden">Recupere o colágeno e a elastina da sua pele com o microagulhamento!</p>
             </div>
-          </div>
+            </div>
+
+            <!-- Image 4 -->
+            <div class="carousel-item relative float-left w-full">
+                <div class="relative overflow-hidden bg-no-repeat bg-cover" style="background-position: 50%;">
+                  <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(126).jpg" class="block w-full" />
+                  <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black opacity-50"></div>
+                </div>
+                <div class="carousel-caption absolute text-center">
+                  <h5 class="text-xl hidden md:block">Retenção de Líquidos?</h5>
+                  <p class="hidden md:block">A retenção de líquidos é originada pela acumulação de líquidos no espaço que envolve os tecidos e os órgãos.
+                    Com a drenagem linfática manual é dizer adeus as pernas inchadas! </p>
+                  <p class="md:hidden">Com a drenagem linfática manual diga adeus às pernas inchadas!</p>
+                </div>
+                </div>
+
+                <!-- Image 5 -->
+            <div class="carousel-item relative float-left w-full">
+                <div class="relative overflow-hidden bg-no-repeat bg-cover" style="background-position: 50%;">
+                  <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(127).jpg" class="block w-full" />
+                  <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black opacity-50"></div>
+                </div>
+                <div class="carousel-caption absolute text-center">
+                  <h5 class="text-xl hidden md:block">Queimadura?</h5>
+                  <p class="hidden md:block">Os tratamentos de enfermagem vão até ao seu domicílio. Usufrua do seu tratamento no conforto do seu lar!</p>
+                  <p class="md:hidden">Tratamentos de enfermagem no conforto do seu lar!</p>
+                </div>
+                </div>
+
         </div>
         <button
           class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
@@ -155,13 +227,11 @@
     <!--#region CTA Section -->
     <section id="cta" class="bg-veryLightBrown">
         <!-- Flex Container -->
-        <div class="container flex flex-row items-center justify-between py-12 mx-auto">
+        <div class="flex flex-col items-start py-10 space-y-5 px-5 md:space-y-0 md:flex-row md:justify-around md:space-x-5 md:items-center">
             <!-- Heading -->
-            <h2 class="text-5xl leading-tight text-center text-darkBrown">
-                Já olhou pela sua saúde este mês?
-            </h2>
+            <h2 class="text-5xl leading-tight text-darkBrown">Já olhou pela sua saúde este mês?</h2>
             <!-- Button -->
-            <a href="#" class="py-2 px-3 rounded-full baseline ring-2 ring-solid ring-darkBrown bg-lightPink text-darkBrown transition duration-300 hover:text-lightPink hover:bg-darkBrown">
+            <a href="#" class="py-2 px-3 text-center rounded-full baseline ring-2 ring-solid ring-darkBrown bg-lightPink text-darkBrown transition duration-300 hover:text-lightPink hover:bg-darkBrown">
                 Faça o seu agendamento
             </a>
         </div>
@@ -170,7 +240,7 @@
 
     <!--#region FOOTER -->
     <footer class="bg-darkPink">
-        <div class="container flex flex-row justify-around items-center p-6 mx-auto" >
+        <div class="flex flex-col items-center p-6 md:flex-row md:justify-around" >
             <!-- Logo and social links container -->
             <div class="flex flex-col items-center justify-between">
                 <!-- Logo -->
@@ -185,26 +255,26 @@
             </div>
 
             <!-- List Container -->
-            <div class="flex justify-around space-x-24">
-                <div class="flex flex-col space-y-3">
+            <div class="pt-5 flex flex-col lg:flex-row md:pl-5 lg:space-x-12">
+                <div class="flex flex-col space-y-3 items-center text-center md:items-start">
                     <a href="#" class="hover:text-darkBrown">Drenagem Linfática Manual</a>
                     <a href="#" class="hover:text-darkBrown">Mesoterapia Homeopática Estética</a>
                     <a href="#" class="hover:text-darkBrown">Mesoterapia Homeopática Dor</a>
                     <a href="#" class="hover:text-darkBrown">Microagulhamento</a>
                     <a href="#" class="hover:text-darkBrown">Tratamentos Enfermagem</a>
                 </div>
-                <div class="flex flex-col justify-around">
-                    <a href="#" class="hover:text-darkBrown">Home</a>
+                <div class="pt-3 flex flex-col space-y-3 items-center text-center md:items-start">
+                    <a href="./index.html" class="hover:text-darkBrown">Home</a>
                     <a href="#" class="hover:text-darkBrown">Quem somos?</a>
                     <a href="#" class="hover:text-darkBrown">Contactos</a>
                 </div>
             </div>
 
             <!-- CopyRight Container -->
-            <div class="flex flex-col justify-between space-y-10">
+            <div class="pt-5 flex flex-col items-center justify-between space-y-10 md:pl-5">
                 <!-- Button -->
                 <a href="#" class="mx-auto py-2 px-3 rounded-full baseline ring-2 ring-solid ring-darkBrown bg-lightPink text-darkBrown transition duration-300 hover:text-lightPink hover:bg-darkBrown">Faça o seu agendamento</a>
-                <p>Copyright &copy; 2022, All Rights Reserved</p>   
+                <p class="text-center">Copyright &copy; 2022, All Rights Reserved</p>   
             </div>
         </div>
 

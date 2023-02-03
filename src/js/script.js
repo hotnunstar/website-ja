@@ -1,5 +1,7 @@
 const oQueFazemos = document.getElementById('oQueFazemos');
 const subMenu = document.getElementById('subMenu');
+const btn = document.getElementById('menu-btn');
+const nav = document.getElementById('menu');
 
 oQueFazemos.addEventListener('click', () => {
     subMenu.classList.toggle('flex')
@@ -13,3 +15,9 @@ window.addEventListener('click', function(e){
         subMenu.classList.add('hidden')
     }
   });
+
+btn.addEventListener('click', () => {
+    btn.classList.toggle('open')
+    nav.classList.toggle('flex')
+    nav.classList.toggle('hidden')
+})
