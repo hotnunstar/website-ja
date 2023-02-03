@@ -21,3 +21,8 @@ footer{
     background-repeat: no-repeat;
     background-position: -20% top;
 }
+
+#title{
+    font-weight: bolder;
+}
+

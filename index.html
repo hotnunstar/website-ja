@@ -14,7 +14,7 @@
     <!--#region NAVBAR -->
     <nav class="relative container min-w-full">
         <!-- Flex Container -->
-        <flex class="flex items-center justify-between bg-darkPink px-3">
+        <div class="flex items-center justify-between bg-darkPink px-3">
             <!-- Logo -->
             <div> 
                 <a href="#"> <img class="object-scale-down w-20 m-3 border-solid border-white border-4 rounded-full" src="./src/assets/Logo.svg" alt="JA - Saúde e Bem-estar logótipo"></a>
@@ -25,7 +25,7 @@
                 <a href="#" class="hover:text-darkBrown">Quem somos?</a>
                 <div id="oQueFazemos">
                     <a href="#" class="hover:text-darkBrown">O que fazemos?</a>
-                    <div id="subMenu" class="hidden fixed flex-col rounded-lg text-darkBrown bg-veryLightBrown mt-5 mr-50 px-5 py-2">
+                    <div id="subMenu" class="hidden absolute flex-col rounded-lg text-darkBrown bg-veryLightBrown mt-5 mr-50 px-5 py-2">
                         <a href="#" class="transition duration-300 hover:text-lightPink">Drenagem Linfática Manual</a>
                         <a href="#" class="transition duration-300 hover:text-lightPink">Mesoterapia Homeopática Estética</a>
                         <a href="#" class="transition duration-300 hover:text-lightPink">Mesoterapia Homeopática Dor</a>
@@ -36,15 +36,45 @@
                 <a href="#" class="hover:text-darkBrown">Contactos</a>
 
             <!-- Button -->
-            <a href="#" class="py-2 px-3 rounded-full baseline bg-lightPink text-darkBrown transition duration-300 hover:text-lightPink hover:bg-darkBrown">
+            <a href="#" class="py-2 px-3 rounded-full baseline ring-2 ring-solid ring-darkBrown bg-lightPink text-darkBrown transition duration-300 hover:text-lightPink hover:bg-darkBrown">
                 Faça o seu agendamento
             </a>
             </div>
-        </flex>
+        </div>
     </nav>
     <!--#endregion-->
 
+    <!--#region Title-->
+    <section id="title">
+        <!-- Flex Container -->
+        <div class="container flex flex-row justify-between items-center gap-5 py-12 mx-auto">
+            <div class="flex flex-col items-center gap-5">
+                <!-- Heading -->
+                <h1 class="text-5xl leading-tight text-center text-darkBrown">Cuide do seu bem estar no conforto do seu lar</h1>
+                <!-- Services -->
+                <div class="flex flex-row items-center">
+                    <a href="#" class="hover:text-darkBrown"><p class="text-lg px-3 border-r-2 border-solid border-black">Drenagem</p></a>
+                    <a href="#" class="hover:text-darkBrown"><p class="text-lg px-3 border-r-2 border-solid border-black">Mesoterapia</p></a>
+                    <a href="#" class="hover:text-darkBrown"><p class="text-lg px-3 border-r-2 border-solid border-black">Microagulhamento</p></a>
+                    <a href="#" class="hover:text-darkBrown"><p class="text-lg px-3">Tratamentos de Enfermagem</p></a>
+                </div>
+            </div>
+            
+            <!-- Buttons -->
+            <div class="flex flex-col text-center gap-5">
+                <a href="#" class="py-2 px-3 rounded-full baseline ring-2 ring-solid ring-darkBrown bg-lightPink text-darkBrown transition duration-300 hover:text-lightPink hover:bg-darkBrown">
+                    Sobre nós
+                </a>
+                <a href="#" class="py-2 px-3 rounded-full baseline ring-2 ring-solid ring-darkBrown bg-lightPink text-darkBrown transition duration-300 hover:text-lightPink hover:bg-darkBrown">
+                    Faça o seu agendamento
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--#endregion-->
+
     <!--#region Gallery -->
+    <section id="gallery">
     <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
         <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
           <button
@@ -119,6 +149,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+    </section>
     <!--#endregion -->
 
     <!--#region CTA Section -->
@@ -130,7 +161,7 @@
                 Já olhou pela sua saúde este mês?
             </h2>
             <!-- Button -->
-            <a href="#" class="py-2 px-3 rounded-full baseline bg-lightPink text-darkBrown transition duration-300 hover:text-lightPink hover:bg-darkBrown">
+            <a href="#" class="py-2 px-3 rounded-full baseline ring-2 ring-solid ring-darkBrown bg-lightPink text-darkBrown transition duration-300 hover:text-lightPink hover:bg-darkBrown">
                 Faça o seu agendamento
             </a>
         </div>
@@ -172,7 +203,7 @@
             <!-- CopyRight Container -->
             <div class="flex flex-col justify-between space-y-10">
                 <!-- Button -->
-                <a href="#" class="mx-auto py-2 px-3 rounded-full baseline bg-lightPink text-darkBrown transition duration-300 hover:text-lightPink hover:bg-darkBrown">Faça o seu agendamento</a>
+                <a href="#" class="mx-auto py-2 px-3 rounded-full baseline ring-2 ring-solid ring-darkBrown bg-lightPink text-darkBrown transition duration-300 hover:text-lightPink hover:bg-darkBrown">Faça o seu agendamento</a>
                 <p>Copyright &copy; 2022, All Rights Reserved</p>   
             </div>
         </div>
