@@ -595,27 +595,6 @@ video {
   --bs-body-bg: #fff;
 }
 
-.btn-check[disabled] + .btn {
-  pointer-events: none;
-  filter: none;
-  opacity: 0.65;
-}
-
-.btn-check:disabled + .btn {
-  pointer-events: none;
-  filter: none;
-  opacity: 0.65;
-}
-
-.input-group .btn {
-  position: relative;
-  z-index: 2;
-}
-
-.input-group .btn:focus {
-  z-index: 3;
-}
-
 .input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -708,41 +687,7 @@ textarea.form-control.is-invalid {
   z-index: 3;
 }
 
-.btn-check:focus + .btn {
-  outline: 0;
-  box-shadow: none;
-}
-
-.btn:focus {
-  outline: 0;
-  box-shadow: none;
-}
-
-.btn-check:checked + .btn {
-  box-shadow: none;
-}
-
-.btn-check:active + .btn {
-  box-shadow: none;
-}
-
-.btn:active {
-  box-shadow: none;
-}
-
 .btn.active {
-  box-shadow: none;
-}
-
-.btn-check:checked + .btn:focus {
-  box-shadow: none;
-}
-
-.btn-check:active + .btn:focus {
-  box-shadow: none;
-}
-
-.btn:active:focus {
   box-shadow: none;
 }
 
@@ -3766,12 +3711,6 @@ textarea.form-control.is-invalid {
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
-.space-x-24 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(6rem * var(--tw-space-x-reverse));
-  margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
@@ -3804,10 +3743,6 @@ textarea.form-control.is-invalid {
   border-width: 0px;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
 .border-t-4 {
   border-top-width: 4px;
 }
@@ -3832,11 +3767,6 @@ textarea.form-control.is-invalid {
 .border-darkBrown {
   --tw-border-opacity: 1;
   border-color: rgb(135 62 62 / var(--tw-border-opacity));
-}
-
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-darkPink {
@@ -3885,12 +3815,12 @@ textarea.form-control.is-invalid {
   padding: 0px;
 }
 
-.p-5 {
-  padding: 1.25rem;
-}
-
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .px-5 {
@@ -3918,11 +3848,6 @@ textarea.form-control.is-invalid {
   padding-bottom: 2.5rem;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .pl-5 {
   padding-left: 1.25rem;
 }
@@ -3931,12 +3856,16 @@ textarea.form-control.is-invalid {
   padding-right: 1.25rem;
 }
 
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
 .pt-3 {
   padding-top: 0.75rem;
 }
 
-.pt-5 {
-  padding-top: 1.25rem;
+.pr-8 {
+  padding-right: 2rem;
 }
 
 .text-left {
@@ -4138,6 +4067,30 @@ footer{
     width: auto;
   }
 
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:items-center {
+    align-items: center;
+  }
+
+  .sm\:justify-around {
+    justify-content: space-around;
+  }
+
+  .sm\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .sm\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .sm\:self-center {
     align-self: center;
   }
@@ -4164,40 +4117,24 @@ footer{
     align-items: flex-start;
   }
 
-  .md\:items-end {
-    align-items: flex-end;
-  }
-
   .md\:items-center {
     align-items: center;
-  }
-
-  .md\:justify-center {
-    justify-content: center;
-  }
-
-  .md\:justify-between {
-    justify-content: space-between;
   }
 
   .md\:justify-around {
     justify-content: space-around;
   }
 
-  .md\:justify-items-center {
-    justify-items: center;
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
   .md\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(1.25rem * var(--tw-space-x-reverse));
     margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
   .md\:border-r-2 {
@@ -4235,16 +4172,61 @@ footer{
     flex-direction: column;
   }
 
-  .lg\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(1.25rem * var(--tw-space-x-reverse));
-    margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+  .lg\:items-center {
+    align-items: center;
+  }
+
+  .lg\:justify-around {
+    justify-content: space-around;
   }
 
   .lg\:space-x-12 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(3rem * var(--tw-space-x-reverse));
     margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .lg\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (min-width: 996px) {
+  .min-\[996px\]\:flex-row {
+    flex-direction: row;
+  }
+
+  .min-\[996px\]\:items-center {
+    align-items: center;
+  }
+
+  .min-\[996px\]\:justify-around {
+    justify-content: space-around;
+  }
+
+  .min-\[996px\]\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .min-\[996px\]\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
   }
 }
 
