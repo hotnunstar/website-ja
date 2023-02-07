@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JA - Agendamento</title>
+    <link rel="icon" type="image/ja-icon" href="../assets/Logo.svg">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!--#region NAVBAR -->
+    <nav class="relative container min-w-full">
+        <!-- Flex Container -->
+        <div class="flex pl-5 items-center justify-between bg-darkPink">
+            <!-- Logo -->
+            <a href="../../index.html">
+                <div id="logo" class="flex flex-row items-center"> 
+                    <img class="object-scale-down w-20 m-3 border-solid border-white border-4 rounded-full" src="../assets/Logo.svg" alt="JA - Saúde e Bem-estar logótipo">
+                    <h2 class="text-darkBrown hidden lg:flex">JA - SAÚDE & BEM-ESTAR</h2>
+                </div>
+            </a>
+
+            <!-- Menu Items -->
+            <div class="hidden pr-5 space-x-6 items-center justify-between md:flex">
+                <a href="./aboutUs.html" class="hover:text-darkBrown">Quem somos?</a>
+                <div id="oQueFazemos">
+                    <a href="#" class="hover:text-darkBrown">O que fazemos?</a>
+                    <div id="subMenu" class="hidden absolute flex-col rounded-lg text-darkBrown bg-veryLightBrown mt-5 mr-50 px-5 py-2">
+                        <a href="./drenagem.html" class="transition duration-300 hover:text-lightPink">Drenagem Linfática Manual</a>
+                        <a href="./mesoterapiaEstetica.html" class="transition duration-300 hover:text-lightPink">Mesoterapia Homeopática Estética</a>
+                        <a href="./mesoterapiaDor.html" class="transition duration-300 hover:text-lightPink">Mesoterapia Homeopática Dor</a>
+                        <a href="./microagulhamento.html" class="transition duration-300 hover:text-lightPink">Microagulhamento</a>
+                        <a href="./enfermagem.html" class="transition duration-300 hover:text-lightPink">Tratamentos Enfermagem</a>
+                    </div>
+                </div>
+                <a href="./contacts.html" class="hover:text-darkBrown">Contactos</a>
+
+            <!-- Button -->
+            <a href="./schedules.html" class="py-2 px-3 rounded-full baseline ring-2 ring-solid ring-darkBrown bg-lightPink text-darkBrown transition duration-300 hover:text-lightPink hover:bg-darkBrown">
+                Faça o seu agendamento
+            </a>
+            </div>
+
+            <!-- Hamburger Icon -->
+            <button id="menu-btn" class="mr-5 block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+            <div id="menu" class="relative flex-col items-center text-center hidden mt-4 font-bold bg-white sm:w-auto sm:self-center drop-shadow-md">
+                <a href="./aboutUs.html" class="py-2">Quem somos?</a>
+                <a href="./drenagem.html" class="py-2 w-5/6 border-t-4 border-double border-darkBrown">Drenagem Linfática Manual</a>
+                <a href="./mesoterapiaEstetica.html" class="py-2">Mesoterapia Homeopática Estética</a>
+                <a href="./mesoterapiaDor.html" class="py-2">Mesoterapia Homeopática Dor</a>
+                <a href="./microagulhamento.html" class="py-2">Microagulhamento</a>
+                <a href="./enfermagem.html" class="py-2 w-5/6 text-center border-b-4 border-double border-darkBrown">Tratamentos Enfermagem</a>
+                <a href="./contacts.html" class="py-2">Contactos</a>
+                <a href="./schedules.html" class="py-2">Faça o seu agendamento</a>
+            </div>
+        </div>
+    </nav>
+    <!--#endregion-->
+    
+    <!--#region Formulário -->
+    <section id="Form" class="mx-auto px-20 py-12">
+        <h4 class="font-black text-xl leading-tight text-darkBrown pb-6">Já olhou pela sua saúde este mês? Agende já a sua marcação e entraremos em contacto consigo para confirmação.</h4>
+        <form>
+            <div class="relative z-0 w-full mb-6 group">
+                <input type="name" name="floating_name" id="floating_name" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-darkBrown appearance-none focus:outline-none focus:ring-0 focus:border-gray-400 peer" placeholder=" " required />
+                <label for="floating_name" class="peer-focus:font-medium absolute text-sm text-darkBrown duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gray-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nome Completo</label>
+            </div>
+            <div class="relative z-0 w-full mb-6 group">
+                <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-darkBrown appearance-none focus:outline-none focus:ring-0 focus:border-gray-400 peer" placeholder=" " required />
+                <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-darkBrown duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gray-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
+            </div>
+            <div class="relative z-0 w-full mb-6 group">
+                <input type="password" name="floating_password" id="floating_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
+            </div>
+            <div class="relative z-0 w-full mb-6 group">
+                <input type="password" name="repeat_password" id="floating_repeat_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_repeat_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm password</label>
+            </div>
+            <div class="grid md:grid-cols-2 md:gap-6">
+              <div class="relative z-0 w-full mb-6 group">
+                  <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                  <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
+              </div>
+              <div class="relative z-0 w-full mb-6 group">
+                  <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                  <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2 md:gap-6">
+              <div class="relative z-0 w-full mb-6 group">
+                  <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                  <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number (123-456-7890)</label>
+              </div>
+              <div class="relative z-0 w-full mb-6 group">
+                  <input type="text" name="floating_company" id="floating_company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                  <label for="floating_company" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company (Ex. Google)</label>
+              </div>
+            </div>
+            <button type="submit" class="font-black py-2 px-3 rounded-full baseline ring-2 ring-solid ring-darkBrown bg-lightPink text-darkBrown transition duration-300 hover:text-lightPink hover:bg-darkBrown">Agendar</button>
+        </form>
+    </section>
+    <!--#endregion-->
+
+    <!--#region FOOTER -->
+    <footer class="bg-darkPink">
+        <div class="flex flex-col items-center p-6 md:flex-row md:justify-around" >
+            <!-- Logo and social links container -->
+            <div class="flex flex-col items-center justify-between">
+                <!-- Logo -->
+                <div> <img src="../assets/Logo.svg" class="h-36" alt="" /> </div>
+                <!-- Social Links Container -->
+                <div class="flex justify-center gap-x-2">
+                    <!-- Link 1 -->
+                    <a href="https://www.facebook.com/jasaudeebemestar/" target="_blank"><img src="../assets/facebook-squared-svgrepo-com.svg" alt="" class="h-8" /></a>
+                    <!-- Link 2 -->
+                    <a href="https://www.instagram.com/ja_saudebemestar/" target="_blank"><img src="../assets/instagram-svgrepo-com.svg" alt="" class="h-8" /></a>
+                </div>
+            </div>
+
+            <!-- List Container -->
+            <div class="pt-5 flex flex-col lg:flex-row md:pl-5 lg:space-x-12">
+                <div class="flex flex-col space-y-3 items-center text-center md:items-start">
+                    <a href="./drenagem.html" class="hover:text-darkBrown">Drenagem Linfática Manual</a>
+                    <a href="./mesoterapiaEstetica.html" class="hover:text-darkBrown">Mesoterapia Homeopática Estética</a>
+                    <a href="./mesoterapiaDor.html" class="hover:text-darkBrown">Mesoterapia Homeopática Dor</a>
+                    <a href="./microagulhamento.html" class="hover:text-darkBrown">Microagulhamento</a>
+                    <a href="./enfermagem.html" class="hover:text-darkBrown">Tratamentos Enfermagem</a>
+                </div>
+                <div class="pt-3 flex flex-col space-y-3 items-center text-center md:items-start">
+                    <a href="../../index.html" class="hover:text-darkBrown">Home</a>
+                    <a href="./aboutUs.html" class="hover:text-darkBrown">Quem somos?</a>
+                    <a href="./contacts.html" class="hover:text-darkBrown">Contactos</a>
+                </div>
+            </div>
+
+            <!-- CopyRight Container -->
+            <div class="pt-5 flex flex-col items-center justify-between space-y-10 md:pl-5">
+                <!-- Button -->
+                <a href="./schedules.html" class="mx-auto py-2 px-3 rounded-full baseline ring-2 ring-solid ring-darkBrown bg-lightPink text-darkBrown transition duration-300 hover:text-lightPink hover:bg-darkBrown">Faça o seu agendamento</a>
+                <p class="text-center">Copyright &copy; 2022, All Rights Reserved</p>   
+            </div>
+        </div>
+    </footer>
+    <!--#endregion -->
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
