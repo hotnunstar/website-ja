@@ -70,46 +70,62 @@
     <!--#endregion-->
     
     <!--#region Formulário -->
-    <section id="Form" class="mx-auto px-20 py-12">
+    <section id="Form" class="mx-auto px-5 py-12 md:px-20 lg:px-36 xl:px-52">
         <h4 class="font-black text-xl leading-tight text-darkBrown pb-6">Já olhou pela sua saúde este mês? Agende já a sua marcação e entraremos em contacto consigo para confirmação.</h4>
         <form>
+            <!-- Nome -->
             <div class="relative z-0 w-full mb-6 group">
                 <input type="name" name="floating_name" id="floating_name" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-darkBrown appearance-none focus:outline-none focus:ring-0 focus:border-gray-400 peer" placeholder=" " required />
                 <label for="floating_name" class="peer-focus:font-medium absolute text-sm text-darkBrown duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gray-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nome Completo</label>
             </div>
+
+            <!-- Email -->
             <div class="relative z-0 w-full mb-6 group">
                 <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-darkBrown appearance-none focus:outline-none focus:ring-0 focus:border-gray-400 peer" placeholder=" " required />
                 <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-darkBrown duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gray-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
             </div>
+
+            <!-- Telemóvel -->
             <div class="relative z-0 w-full mb-6 group">
-                <input type="password" name="floating_password" id="floating_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="floating_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
+                <input type="number" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-darkBrown appearance-none focus:outline-none focus:ring-0 focus:border-gray-400 peer" placeholder=" " required />
+                <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-darkBrown duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gray-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Telemóvel</label>
             </div>
+
+            <!-- Especialidade -->
+            <div class="flex flex-col border-b-2 border-darkBrown relative z-0 w-full mb-6 group">  
+                <label for="floating_speciality" class="block text-sm font-medium text-darkBrown">Especialidade</label>
+                <select id="underline_select" class="block px-0 max-w-fit text-sm text-black border-0 bg-transparent appearance-none focus:outline-none focus:ring-0 focus:border-darkBrown peer">
+                    <option value="Drenagem">Drenagem Linfática Manual</option>
+                    <option value="Mesoterapia Estética">Mesoterapia Homeopática Estética</option>
+                    <option value="Mesoterapia Dor">Mesoterapia Homeopática Dor</option>
+                    <option value="Microagulhamento">Microagulhamento</option>
+                    <option value="Enfermagem">Tratamentos de Enfermagem</option>
+                    <option value="Outros">Outros assuntos</option>
+                </select>
+            </div>
+
+            <!-- Data -->
+            <div class="flex flex-col border-b-2 border-darkBrown relative z-0 w-full mb-6 group">      
+                <label for="floating_date" class="block text-sm font-medium text-darkBrown">Data</label>          
+                <input datepicker datepicker-format="dd/mm/yyyy" datepicker-autohide type="text" class="text-sm py-2 bg-transparent border-0 p-0" placeholder="Selecionar a data" required>
+            </div>
+
+            <!-- Hora -->
             <div class="relative z-0 w-full mb-6 group">
-                <input type="password" name="repeat_password" id="floating_repeat_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="floating_repeat_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm password</label>
+                <input type="text" name="floating_hour" id="floating_hour" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-darkBrown appearance-none focus:outline-none focus:ring-0 focus:border-gray-400 peer" placeholder=" " required />
+                <label for="floating_hour" class="peer-focus:font-medium absolute text-sm text-darkBrown duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gray-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Intervalo horário pretendido</label>
+            </div> 
+
+            <!-- Comentários -->
+            <div class="relative z-0 w-full mb-6 group">
+                <label for="message" class="block mb-2 text-sm font-medium text-darkBrown">Comentários adicionais</label>
+                <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-black bg-transparent rounded-lg border-2 border-darkBrown focus:ring-gray-400 focus:border-gray-400" placeholder="Deixe um comentário adicional..."></textarea>
             </div>
-            <div class="grid md:grid-cols-2 md:gap-6">
-              <div class="relative z-0 w-full mb-6 group">
-                  <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                  <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
-              </div>
-              <div class="relative z-0 w-full mb-6 group">
-                  <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                  <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
-              </div>
-            </div>
-            <div class="grid md:grid-cols-2 md:gap-6">
-              <div class="relative z-0 w-full mb-6 group">
-                  <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                  <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number (123-456-7890)</label>
-              </div>
-              <div class="relative z-0 w-full mb-6 group">
-                  <input type="text" name="floating_company" id="floating_company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                  <label for="floating_company" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company (Ex. Google)</label>
-              </div>
-            </div>
-            <button type="submit" class="font-black py-2 px-3 rounded-full baseline ring-2 ring-solid ring-darkBrown bg-lightPink text-darkBrown transition duration-300 hover:text-lightPink hover:bg-darkBrown">Agendar</button>
+            
+            <!-- Botão -->
+            <div class="flex flex-col items-center justify-center">
+                <button type="submit" class="font-black py-2 px-12 rounded-full baseline ring-2 ring-solid ring-darkBrown bg-lightPink text-darkBrown transition duration-300 hover:text-lightPink hover:bg-darkBrown">Agendar</button>
+            </div>         
         </form>
     </section>
     <!--#endregion-->
@@ -157,5 +173,7 @@
     <!--#endregion -->
 
     <script src="../js/script.js"></script>
+    <script src="../js/flowbite.min.js"></script>
+    <script src="../js/datepicker.js"></script>
 </body>
 </html>
