@@ -70,9 +70,9 @@
     <!--#endregion-->
     
     <!--#region Formulário -->
-    <section id="Form" class="mx-auto px-5 py-12 md:px-20 lg:px-36 xl:px-52">
+    <section class="mx-auto px-5 py-12 md:px-20 lg:px-36 xl:px-52">
         <h4 class="font-black text-xl leading-tight text-darkBrown pb-6">Já olhou pela sua saúde este mês? Agende já a sua marcação e entraremos em contacto consigo para confirmação.</h4>
-        <form>
+        <form id="scheduleForm">
             <!-- Nome -->
             <div class="relative z-0 w-full mb-6 group">
                 <input type="name" name="floating_name" id="floating_name" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-darkBrown appearance-none focus:outline-none focus:ring-0 focus:border-gray-400 peer" placeholder=" " required />
@@ -87,14 +87,14 @@
 
             <!-- Telemóvel -->
             <div class="relative z-0 w-full mb-6 group">
-                <input type="number" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-darkBrown appearance-none focus:outline-none focus:ring-0 focus:border-gray-400 peer" placeholder=" " required />
+                <input type="tel" pattern="[0-9]{9}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-darkBrown appearance-none focus:outline-none focus:ring-0 focus:border-gray-400 peer" placeholder=" " required />
                 <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-darkBrown duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gray-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Telemóvel</label>
             </div>
 
             <!-- Especialidade -->
             <div class="flex flex-col border-b-2 border-darkBrown relative z-0 w-full mb-6 group">  
                 <label for="floating_speciality" class="block text-sm font-medium text-darkBrown">Especialidade</label>
-                <select id="underline_select" class="block px-0 max-w-fit text-sm text-black border-0 bg-transparent appearance-none focus:outline-none focus:ring-0 focus:border-darkBrown peer">
+                <select id="speciality_select" class="block px-0 max-w-fit text-sm text-black border-0 bg-transparent appearance-none focus:outline-none focus:ring-0 focus:border-darkBrown peer">
                     <option value="Drenagem">Drenagem Linfática Manual</option>
                     <option value="Mesoterapia Estética">Mesoterapia Homeopática Estética</option>
                     <option value="Mesoterapia Dor">Mesoterapia Homeopática Dor</option>
@@ -107,7 +107,7 @@
             <!-- Data -->
             <div class="flex flex-col border-b-2 border-darkBrown relative z-0 w-full mb-6 group">      
                 <label for="floating_date" class="block text-sm font-medium text-darkBrown">Data</label>          
-                <input datepicker datepicker-format="dd/mm/yyyy" datepicker-autohide type="text" class="text-sm py-2 bg-transparent border-0 p-0" placeholder="Selecionar a data" required>
+                <input id="floating_date" datepicker datepicker-format="dd/mm/yyyy" datepicker-autohide type="text" class="text-sm py-2 bg-transparent border-0 p-0" placeholder="Selecionar a data" required>
             </div>
 
             <!-- Hora -->
@@ -124,9 +124,28 @@
             
             <!-- Botão -->
             <div class="flex flex-col items-center justify-center">
-                <button type="submit" class="font-black py-2 px-12 rounded-full baseline ring-2 ring-solid ring-darkBrown bg-lightPink text-darkBrown transition duration-300 hover:text-lightPink hover:bg-darkBrown">Agendar</button>
-            </div>         
+                <input type="submit" id="submitForm" value="Agendar" class="hover:cursor-pointer font-black py-2 px-12 rounded-full baseline ring-2 ring-solid ring-darkBrown bg-lightPink text-darkBrown transition duration-300 hover:text-lightPink hover:bg-darkBrown"/>
+            </div> 
+            
+            <!-- Alert -->
+            <div id="formAlert" class="hidden flex mt-5 p-4 text-sm text-gray-800 rounded-lg bg-gray-900 " role="alert">
+                <svg aria-hidden="true" class="flex-shrink-0 inline w-5 h-5 mr-3" fill="gray" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+                <span class="sr-only">Info</span>
+                <div class="text-white">
+                    <span class="font-medium">Verificar os dados introduzidos!</span> Se o erro persistir, por favor, entrar em contacto pelos meios alternativos.
+                </div>
+            </div>   
+
+            <!-- Success -->
+            <div id="formSuccess" class="hidden flex mt-5 p-4 text-sm text-gray-800 rounded-lg bg-green-900 " role="alert">
+                <svg aria-hidden="true" class="flex-shrink-0 inline w-5 h-5 mr-3" fill="gray" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+                <span class="sr-only">Info</span>
+                <div class="text-white">
+                    <span class="font-medium">O pedido de agendamento foi enviado com sucesso!</span> Entraremos em contacto para a respetiva confirmação.
+                </div>
+            </div>
         </form>
+        
     </section>
     <!--#endregion-->
 

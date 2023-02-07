@@ -20,6 +20,8 @@ module.exports = {
     },
   },
   plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
     require('tw-elements/dist/plugin'),
     require('flowbite/plugin')
   ],
