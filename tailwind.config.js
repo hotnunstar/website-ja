@@ -16,6 +16,15 @@ module.exports = {
         lightBrown: '#6a4c3c',
         veryLightBrown: '#d6c0ad',
         backgroundLines: '#f7e0d4',
+      },
+      keyframes:{
+        pulseOnce:{
+          '0%': {opacity:'0'},
+          '100%': {opacity:'1'},
+          }
+        },
+      animation:{
+        pulseOnce: 'pulseOnce 1s ease-in-out',
       }
     },
   },

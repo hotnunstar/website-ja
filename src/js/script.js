@@ -39,7 +39,7 @@ var data_js = {
 };
 
 var sendButton = document.getElementById("submitForm");
-sendButton.onclick = js_send
+sendButton.onclick = js_send()
 
 function js_send() {
     let regex = /[0-9]{9}/

@@ -4062,9 +4062,18 @@ textarea.form-control.is-invalid {
   margin: 0.75rem;
 }
 
+.-m-1 {
+  margin: -0.25rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 
 .mt-5 {
@@ -4167,6 +4176,10 @@ textarea.form-control.is-invalid {
   width: 100%;
 }
 
+.w-32 {
+  width: 8rem;
+}
+
 .w-5 {
   width: 1.25rem;
 }
@@ -4257,6 +4270,20 @@ textarea.form-control.is-invalid {
   transform: none;
 }
 
+@keyframes pulseOnce {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-pulseOnce {
+  animation: pulseOnce 1s ease-in-out;
+}
+
 .cursor-default {
   cursor: default;
 }
@@ -4293,6 +4320,10 @@ textarea.form-control.is-invalid {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-start {
@@ -4416,6 +4447,11 @@ textarea.form-control.is-invalid {
   border-width: 1px;
 }
 
+.border-y-2 {
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+}
+
 .border-t-4 {
   border-top-width: 4px;
 }
@@ -4426,6 +4462,10 @@ textarea.form-control.is-invalid {
 
 .border-b-2 {
   border-bottom-width: 2px;
+}
+
+.border-t-2 {
+  border-top-width: 2px;
 }
 
 .border-solid {
@@ -4545,9 +4585,19 @@ textarea.form-control.is-invalid {
   background-repeat: no-repeat;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .object-scale-down {
   -o-object-fit: scale-down;
      object-fit: scale-down;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 
 .p-8 {
@@ -4578,6 +4628,10 @@ textarea.form-control.is-invalid {
   padding: 0.25rem;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -4596,6 +4650,16 @@ textarea.form-control.is-invalid {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .py-12 {
@@ -4628,6 +4692,11 @@ textarea.form-control.is-invalid {
   padding-bottom: 0.75rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .pl-5 {
   padding-left: 1.25rem;
 }
@@ -4644,6 +4713,10 @@ textarea.form-control.is-invalid {
   padding-top: 0.75rem;
 }
 
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
 .pb-6 {
   padding-bottom: 1.5rem;
 }
@@ -4652,12 +4725,24 @@ textarea.form-control.is-invalid {
   padding-top: 0.5rem;
 }
 
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .text-left {
   text-align: left;
 }
 
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .text-5xl {
@@ -4673,6 +4758,11 @@ textarea.form-control.is-invalid {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-sm {
@@ -4741,6 +4831,11 @@ textarea.form-control.is-invalid {
 .text-blue-600 {
   --tw-text-opacity: 1;
   color: rgb(28 100 242 / var(--tw-text-opacity));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .opacity-50 {
@@ -4976,9 +5071,9 @@ input:-webkit-autofill:active {
   outline-offset: 2px;
 }
 
-.focus\:border-gray-400:focus {
+.focus\:border-veryLightBrown:focus {
   --tw-border-opacity: 1;
-  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+  border-color: rgb(214 192 173 / var(--tw-border-opacity));
 }
 
 .focus\:border-darkBrown:focus {
@@ -5011,11 +5106,6 @@ input:-webkit-autofill:active {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
-
-.focus\:ring-gray-400:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(156 163 175 / var(--tw-ring-opacity));
 }
 
 .focus\:ring-gray-200:focus {
@@ -5069,9 +5159,9 @@ input:-webkit-autofill:active {
   font-weight: 500;
 }
 
-.peer:focus ~ .peer-focus\:text-gray-400 {
+.peer:focus ~ .peer-focus\:text-veryLightBrown {
   --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
+  color: rgb(214 192 173 / var(--tw-text-opacity));
 }
 
 .dark .dark\:border-gray-600 {
@@ -5177,6 +5267,15 @@ input:-webkit-autofill:active {
 }
 
 @media (min-width: 768px) {
+  .md\:-m-2 {
+    margin: -0.5rem;
+  }
+
+  .md\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -5187,6 +5286,10 @@ input:-webkit-autofill:active {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:w-48 {
+    width: 12rem;
   }
 
   .md\:flex-row {
@@ -5218,6 +5321,24 @@ input:-webkit-autofill:active {
     border-color: rgb(0 0 0 / var(--tw-border-opacity));
   }
 
+  .md\:p-2 {
+    padding: 0.5rem;
+  }
+
+  .md\:p-12 {
+    padding: 3rem;
+  }
+
+  .md\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .md\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -5227,14 +5348,36 @@ input:-webkit-autofill:active {
     padding-left: 1.25rem;
   }
 
+  .md\:pt-12 {
+    padding-top: 3rem;
+  }
+
+  .md\:pb-12 {
+    padding-bottom: 3rem;
+  }
+
   .md\:text-center {
     text-align: center;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
 @media (min-width: 976px) {
+  .lg\:mx-36 {
+    margin-left: 9rem;
+    margin-right: 9rem;
+  }
+
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:w-80 {
+    width: 20rem;
   }
 
   .lg\:flex-row {
@@ -5254,6 +5397,24 @@ input:-webkit-autofill:active {
   .lg\:px-36 {
     padding-left: 9rem;
     padding-right: 9rem;
+  }
+
+  .lg\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .lg\:pt-24 {
+    padding-top: 6rem;
+  }
+
+  .lg\:pt-5 {
+    padding-top: 1.25rem;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -5284,6 +5445,11 @@ input:-webkit-autofill:active {
 }
 
 @media (min-width: 1440px) {
+  .xl\:mx-52 {
+    margin-left: 13rem;
+    margin-right: 13rem;
+  }
+
   .xl\:px-52 {
     padding-left: 13rem;
     padding-right: 13rem;
