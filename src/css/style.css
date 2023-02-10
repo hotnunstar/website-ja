@@ -5443,6 +5443,11 @@ input:-webkit-autofill:active {
     line-height: 1.75rem;
   }
 
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .md\:drop-shadow-\[0_10px_8px_rgba\(0\2c 0\2c 0\2c 1\)\] {
     --tw-drop-shadow: drop-shadow(0 10px 8px rgba(0,0,0,1));
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
