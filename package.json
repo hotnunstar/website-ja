@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "flowbite": "^1.6.3",
+    "tailwindcss-animation-delay": "^1.0.7",
     "tw-elements": "^1.0.0-alpha13"
   }
 }

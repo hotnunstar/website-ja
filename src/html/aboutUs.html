@@ -3,7 +3,7 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito:wght@800&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,50 +69,58 @@
     </nav>
     <!--#endregion-->
     
-    <!--#region Title -->
-    <div id="logo" class="animate-pulseOnce flex flex-col items-center py-5 gap-5 md:py-12"> 
+    <!--#region Header -->
+    <div id="logo" class="animate-pulseOnce mx-auto flex flex-col items-center py-5 gap-5 md:py-12"> 
         <img class="object-scale-down w-32 rounded-full md:w-48 lg:w-80" src="../assets/Logo.svg" alt="JA - Saúde e Bem-estar logótipo">
         <h1 class="text-darkBrown text-base text-center md:text-xl lg:text-2xl">JA - SAÚDE & BEM-ESTAR</h1>
     </div>
     <!--#endregion -->
 
+    <!--#region Title AboutUs -->
+    <div class="animation_div flex justify-center items-center border-double border-t-4 border-darkBrown pt-5 mx-5 md:mx-12 lg:mx-20 xl:mx-28 md:pt-12">
+        <div class="inline-block">
+            <div class="title_animation hidden overflow-hidden whitespace-nowrap width-0 border-r-darkBrown border-r-4 text-3xl text-darkBrown uppercase px-2">Sobre nós</div>
+        </div>
+    </div>
+    <!--#endregion -->
+
     <!--#region Text -->
-    <div class="text-justify mx-5 px-6 pt-5 border-t-2 border-darkBrown md:mx-20 lg:mx-36 xl:mx-52 md:pt-12 md:px-0">
-        <p class="pb-3 font-bold">Na JA - Saúde & Bem-Estar preocupamo-nos unicamente com o seu bem-estar físico, psíquico e social.</p>
-        <p class="pb-3 font-bold">A saúde não é caracterizada apenas pela ausência da doença mas, também, pelo bem-estar completo do indivíduo, seja ele o bem-estar físico, psíquico ou social.</p>
-        <p class="pb-3 font-bold">Através de um cuidar holístico, JA - Saúde & Bem-Estar procura ajudar na adaptação às novas transições da vida, proporcionando momentos de procura e melhoria do bem-estar de cada paciente de forma diferenciada.</p>
-        <p class="font-bold">Com os tratamentos a serem realizados ao domicílio, poderá usufruir dos nossos serviços no conforto do seu lar, apenas tendo de disponibilizar uma sala/espaço com o mínimo de movimentos para que possa usufruir do seu tratamento. Com o serviço ao domicílio é proporcionado todo o material necessário para a prática clínica.</p>
+    <div class="animate-pulseOnce text-justify mx-5 px-2 pt-5 md:mx-12 lg:mx-20 xl:mx-28 md:pt-12">
+        <p class="pb-3">Na JA - Saúde & Bem-Estar preocupamo-nos unicamente com o seu bem-estar físico, psíquico e social.</p>
+        <p class="pb-3">A saúde não é caracterizada apenas pela ausência da doença mas, também, pelo bem-estar completo do indivíduo, seja ele o bem-estar físico, psíquico ou social.</p>
+        <p class="pb-3">Através de um cuidar holístico, JA - Saúde & Bem-Estar procura ajudar na adaptação às novas transições da vida, proporcionando momentos de procura e melhoria do bem-estar de cada paciente de forma diferenciada.</p>
+        <p>Com os tratamentos a serem realizados ao domicílio, poderá usufruir dos nossos serviços no conforto do seu lar, apenas tendo de disponibilizar uma sala/espaço com o mínimo de movimentos para que possa usufruir do seu tratamento. Com o serviço ao domicílio é proporcionado todo o material necessário para a prática clínica.</p>
     </div>
     <!--#endregion -->
 
     <!--#region Gallery-->
-    <section class="overflow-hidden text-gray-700">
-        <div class="container py-5 px-11 mx-auto md:px-20 lg:px-32 md:py-12">
+    <section class="animate-pulseOnce overflow-hidden">
+        <div class="container py-5 px-11 mx-auto md:px-20 lg:px-32 xl:px-60 md:py-12">
           <div class="flex flex-wrap -m-1 md:-m-2">
             <div class="flex flex-wrap w-1/2">
-              <div class="w-1/2 p-1 hover:drop-shadow-[0_10px_8px_rgba(0,0,0,1)] md:p-2">
+              <div class="w-1/2 p-1 drop-shadow-[0_2px_1px_rgba(0,0,0,1)] md:p-2 md:drop-shadow-[0_10px_8px_rgba(0,0,0,1)]">
                 <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
                   src="../assets/AboutUs1.jpg">
               </div>
-              <div class="w-1/2 p-1 hover:drop-shadow-[0_10px_8px_rgba(0,0,0,1)] md:p-2">
+              <div class="w-1/2 p-1 drop-shadow-[0_2px_1px_rgba(0,0,0,1)] md:p-2 md:drop-shadow-[0_10px_8px_rgba(0,0,0,1)]">
                 <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
                   src="../assets/AboutUs2.jpg">
               </div>
-              <div class="w-full p-1 hover:drop-shadow-[0_10px_8px_rgba(0,0,0,1)] md:p-2">
+              <div class="w-full p-1 drop-shadow-[0_2px_1px_rgba(0,0,0,1)] md:p-2 md:drop-shadow-[0_10px_8px_rgba(0,0,0,1)]">
                 <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
                   src="../assets/AboutUs4.jpg">
               </div>
             </div>
             <div class="flex flex-wrap w-1/2">
-              <div class="w-full p-1 hover:drop-shadow-[0_10px_8px_rgba(0,0,0,1)] md:p-2">
+              <div class="w-full p-1 drop-shadow-[0_2px_1px_rgba(0,0,0,1)] md:p-2 md:drop-shadow-[0_10px_8px_rgba(0,0,0,1)]">
                 <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
                   src="../assets/AboutUs5.jpg">
               </div>
-              <div class="w-1/2 p-1 hover:drop-shadow-[0_10px_8px_rgba(0,0,0,1)] md:p-2">
+              <div class="w-1/2 p-1 drop-shadow-[0_2px_1px_rgba(0,0,0,1)] md:p-2 md:drop-shadow-[0_10px_8px_rgba(0,0,0,1)]">
                 <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
                   src="../assets/AboutUs6.jpg">
               </div>
-              <div class="w-1/2 p-1 hover:drop-shadow-[0_10px_8px_rgba(0,0,0,1)] md:p-2">
+              <div class="w-1/2 p-1 drop-shadow-[0_2px_1px_rgba(0,0,0,1)] md:p-2 md:drop-shadow-[0_10px_8px_rgba(0,0,0,1)]">
                 <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
                   src="../assets/AboutUs3.jpg">
               </div>
@@ -122,15 +130,23 @@
       </section>
     <!--#endregion-->
 
+    <!--#region Title Team -->
+    <div class="animation_div2 flex justify-center items-center border-double border-t-4 border-darkBrown pt-5 mx-5 md:mx-12 lg:mx-20 xl:mx-28 md:pt-12">
+        <div class="inline-block">
+            <div class="title_animation hidden overflow-hidden whitespace-nowrap width-0 border-r-darkBrown border-r-4 text-3xl text-darkBrown uppercase px-2">A equipa</div>
+        </div>
+    </div>
+    <!--#endregion -->
+    
     <!--#region Team -->
-    <div class="flex flex-col items-center justify-center gap-5 text-justify mx-5 px-6 py-5 border-t-2 border-darkBrown lg:flex-row md:mx-20 lg:mx-36 xl:mx-52 md:p-12 md:px-0 md:gap-12">
-        <div class="object-scale-down border border-black w-64 h-64"></div>
+    <div class="flex flex-col items-center justify-center mx-5 px-2 py-5 gap-5 lg:flex-row md:mx-12 lg:mx-20 xl:mx-28 md:py-12 md:gap-12">
+        <img class="w-60 h-auto rounded-lg drop-shadow-[0_2px_1px_rgba(0,0,0,1)] md:drop-shadow-[0_10px_8px_rgba(0,0,0,1)]" src="../assets/Enf_Joana.jpg" alt="Fotografia enfermeira Joana">
         <div class="text-justify">
-            <p class="pb-3 font-bold">Enfermeira Joana Rita Oliveira Araújo</p>
-            <p class="pb-3 font-bold">Licenciada pelo Instituto Politécnico de Saúde do Norte - Escola Superior de Saúde do Vale do Ave.</p>
-            <p class="pb-3 font-bold">Vê a área da saúde de forma diferenciada e procura proporcionar aos seus utentes cuidados adaptados às suas necessidades.</p>
-            <p class="pb-3 font-bold">De modo a implementar a prevenção e promoção da saúde junto da comunidade e, aproveitando o interesse pelo ensino, tirou formação inicial de formadores (CCP), ajudando a formar pessoas capacitadas na área da saúde. Para marcação de formações, por favor entrar em <a href="./contacts.html" class="underline">contacto</a>.</p>
-            <p class="font-bold">Possuí várias formações na área da saúde estética.</p>
+            <p class="pb-3">Enfermeira Joana Rita Oliveira Araújo</p>
+            <p class="pb-3">Licenciada pelo Instituto Politécnico de Saúde do Norte - Escola Superior de Saúde do Vale do Ave.</p>
+            <p class="pb-3">Vê a área da saúde de forma diferenciada e procura proporcionar aos seus utentes cuidados adaptados às suas necessidades.</p>
+            <p class="pb-3">De modo a implementar a prevenção e promoção da saúde junto da comunidade e, aproveitando o interesse pelo ensino, tirou formação inicial de formadores (CCP), ajudando a formar pessoas capacitadas na área da saúde. Para marcação de formações, por favor entrar em <a href="./contacts.html" class="underline">contacto</a>.</p>
+            <p>Possuí várias formações na área da saúde estética.</p>
         </div>
     </div>
     <!--#endregion -->
@@ -140,9 +156,9 @@
         <!-- Flex Container -->
         <div class="flex flex-col items-start py-10 space-y-5 px-5 min-[996px]:space-y-0 min-[996px]:flex-row min-[996px]:justify-around min-[996px]:space-x-5 min-[996px]:items-center">
             <!-- Heading -->
-            <h2 class="text-5xl leading-tight text-darkBrown">Já olhou pela sua saúde este mês?</h2>
+            <h2 id="title" class="text-5xl leading-tight text-darkBrown">Já olhou pela sua saúde este mês?</h2>
             <!-- Button -->
-            <a href="./src/html/schedules.html" class="py-2 px-3 text-center rounded-full baseline ring-2 ring-solid ring-darkBrown bg-lightPink text-darkBrown transition duration-300 hover:text-lightPink hover:bg-darkBrown">
+            <a href="./schedules.html" class="py-2 px-3 text-center rounded-full baseline ring-2 ring-solid ring-darkBrown bg-lightPink text-darkBrown transition duration-300 hover:text-lightPink hover:bg-darkBrown">
                 Faça o seu agendamento
             </a>
         </div>

@@ -8,7 +8,7 @@
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
     background-color: #feede8;
 }
 
@@ -89,3 +89,7 @@ input:-webkit-autofill:active {
     transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
+@keyframes blink {
+    from, to {border-color: transparent;}
+    50% {border-color: #873e3e;}
+  }

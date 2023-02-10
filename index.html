@@ -3,7 +3,7 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito:wght@800&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -72,7 +72,7 @@
     <!--#region Title-->
     <section id="title">
         <!-- Flex Container -->
-        <div class="container flex flex-col justify-between items-center gap-10 p-8 mx-auto lg:flex-row">
+        <div class="animate-pulseOnce container flex flex-col justify-between items-center gap-10 p-8 mx-auto lg:flex-row">
             <div class="flex flex-col items-left gap-7 md:items-center">
                 <!-- Heading -->
                 <h1 class="px-3 text-5xl leading-tight text-left text-darkBrown md:text-center">Cuide do seu bem estar no conforto do seu lar</h1>
@@ -100,7 +100,7 @@
 
     <!--#region Gallery -->
     <section id="gallery">
-    <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" class="animate-pulseOnce carousel slide relative" data-bs-ride="carousel">
         <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
           <button
             type="button"
@@ -226,11 +226,11 @@
     <!--#endregion -->
 
     <!--#region CTA Section -->
-    <section id="cta" class="bg-veryLightBrown">
+    <section id="cta" class="animate-pulseOnce bg-veryLightBrown">
         <!-- Flex Container -->
         <div class="flex flex-col items-start py-10 space-y-5 px-5 min-[996px]:space-y-0 min-[996px]:flex-row min-[996px]:justify-around min-[996px]:space-x-5 min-[996px]:items-center">
             <!-- Heading -->
-            <h2 class="text-5xl leading-tight text-darkBrown">Já olhou pela sua saúde este mês?</h2>
+            <h2 id="title" class="text-5xl leading-tight text-darkBrown">Já olhou pela sua saúde este mês?</h2>
             <!-- Button -->
             <a href="./src/html/schedules.html" class="py-2 px-3 text-center rounded-full baseline ring-2 ring-solid ring-darkBrown bg-lightPink text-darkBrown transition duration-300 hover:text-lightPink hover:bg-darkBrown">
                 Faça o seu agendamento

@@ -21,10 +21,16 @@ module.exports = {
         pulseOnce:{
           '0%': {opacity:'0'},
           '100%': {opacity:'1'},
-          }
         },
+        typing:{
+          'from': {width:'0', opacity:'0'},
+          '5': {width:'0'},
+          'to': {width:'100%'},
+        },
+      },
       animation:{
         pulseOnce: 'pulseOnce 1s ease-in-out',
+        typing_blink: 'typing 1s steps(16, end) forwards, blink .75s linear infinite',
       }
     },
   },
@@ -32,6 +38,7 @@ module.exports = {
     require('tailwindcss'),
     require('autoprefixer'),
     require('tw-elements/dist/plugin'),
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
+    require("tailwindcss-animation-delay"),
   ],
 }
